@@ -1,0 +1,12 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    background-color: rgb(248, 155, 69);
+}
+
+
+.footerContacts{
+    font-size: 25px;
+
+}

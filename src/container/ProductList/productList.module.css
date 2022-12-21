@@ -1,0 +1,12 @@
+.cocktailProducts{
+    margin: 35px;
+}
+
+.containerProducts{
+    display: flex;
+}
+
+.cocktailsImg{
+    height: 450px;
+    width: 380px;
+}
