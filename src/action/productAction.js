@@ -14,3 +14,10 @@ export const setProducts = (products) => {
       payload: loading,
     };
   };
+
+  export const setIngridientsModal = (modal) => {
+    return {
+      type: actionType.SHOW_INGRIDIENTS,
+      payload: modal,
+    }
+  } 

@@ -10,7 +10,7 @@ const Footer =() =>{
 
             </div>
             <div className={style.footerWrapper}>
-                 <div>Address  Yerevan/Tumanyan str./25</div>
+                 <div>Address.  Yerevan/Tumanyan str./25</div>
                  <div>Phone  +374-77-777-77</div>
                  
 

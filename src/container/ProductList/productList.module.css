@@ -1,12 +1,35 @@
 .cocktailProducts{
-    margin: 35px;
+    padding: 35px;
+    background-color: #aa98bb;
+    color: rgb(128, 73, 82);
 }
-
 .containerProducts{
     display: flex;
+    gap: 50px;
+    
+    
 }
+.informetionDitils{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
 
+}
 .cocktailsImg{
     height: 450px;
     width: 380px;
+    border-radius: 20px;
+    border: solid rgb(134 116 191);
+}
+.buttonWraper{
+    width: 200px;
+    height: 40px;
+    background: #eb2f2ff0;
+    border: none;
+    margin-left: 550px;
+    border-radius: 12px;
+    font-size: 21px;
+    color: darksalmon;
 }

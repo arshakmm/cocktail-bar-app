@@ -18,7 +18,6 @@ const ProductList= () => {
     
     console.log(products)
     return (<div className={style.cocktailProducts}> 
-        <button onClick={showProducts} >Show drinks</button>
         {loading ?(
         <div>...Loading</div>
       ) : (
@@ -28,15 +27,16 @@ const ProductList= () => {
               <div>
                 <img className={style.cocktailsImg} src={products.strDrinkThumb} alt={products.strDrink} />
               </div>
-              <div>
-                <div>{products.strDrink}</div>
-                <div>{products.strCategory}</div>
-                <div>{products.strInstructions}</div>
+              <div className={style.informetionDitils}>
+                <div>Name : {products.strDrink}</div>
+                <div>Category : {products.strCategory}</div>
+                <div>Instructions : {products.strInstructions}</div>
               </div>
             </div>
           </div>
       </div>
       )}
+       <button className={style.buttonWraper} onClick={showProducts} >Show drinks</button>
     </div>
   );
 }

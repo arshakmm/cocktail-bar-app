@@ -1,13 +1,23 @@
 .container{
    display: flex;
    justify-content: space-between;
-   padding: 35px;
-   background-color: cadetblue;
+   padding: 25px;
+   background-color: #766976;
+   
    
 }
-
-
 .wrapperMenu{
-    display: flex;
-    gap: 20px;
+    margin-top: 15px;
+   align-items: center;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.ingridientsModal{
+    border: none;
+    background: none;
+    color: bisque;
+    font-size: 18px;
 }
