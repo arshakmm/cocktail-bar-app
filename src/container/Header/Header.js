@@ -10,7 +10,7 @@ export const Header =()=> {
     const showModal = () => {
         dispatch(getIngridientsModal(true))
     }
-    const hideModal = () => () => {
+    const hideModal = ()  => {
         dispatch(getIngridientsModal(false))
     }
 
