@@ -3,7 +3,7 @@ import { actionType,  } from "../actionType/action-type";
 const initState = {
   products: [],
   loading: false,
-  ismodal:false
+  isModal:false
 };
 
 export const productsReducer = (state = initState, { payload ,type}) => {
@@ -12,8 +12,8 @@ export const productsReducer = (state = initState, { payload ,type}) => {
     return { ...state, products: payload };
     case actionType.SHOW_LOADING:
         return { ...state, loading: payload };
-        case actionType.SHOW_INGRIDIENTS:
-          return { ...state, ismodal: payload };
+    case actionType.SHOW_INGRIDIENTS:
+        return { ...state, isModal: payload };
     default:
       return state;
  }

@@ -15,9 +15,9 @@ export const setProducts = (products) => {
     };
   };
 
-  export const setIngridientsModal = (ismodal) => {
+  export const setIngridientsModal = (isModal) => {
     return {
       type: actionType.SHOW_INGRIDIENTS,
-      payload: ismodal,
+      payload: isModal,
     }
   } 
