@@ -2,8 +2,8 @@ import { setIngridientsModal } from "./productAction"
 
 
 
-const getIngridientsModal =() =>(dispatch)=> {
-    dispatch(setIngridientsModal(true))
+const getIngridientsModal =(isModal) =>(dispatch)=> {
+    dispatch(setIngridientsModal(isModal))
 
 }
 

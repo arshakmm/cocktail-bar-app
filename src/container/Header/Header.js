@@ -7,10 +7,11 @@ export const Header =()=> {
     const ingridientsModal = useSelector((state) =>state.isModal)
     console.log("ingridientsModal",ingridientsModal);
     const dispatch = useDispatch()
-
     const showModal = () => {
-        dispatch(getIngridientsModal())
-
+        dispatch(getIngridientsModal(true))
+    }
+    const hideModal = () => () => {
+        dispatch(getIngridientsModal(false))
     }
 
 
@@ -22,6 +23,7 @@ export const Header =()=> {
            </div> 
            <div className={style.wrapperMenu}>
             <button className={style.ingridientsModal} onClick={showModal}>Ingridient</button> 
+            <button onClick={hideModal  }>xxx</button>
            </div>
            {ingridientsModal && <IngridientsModal/> }
            
