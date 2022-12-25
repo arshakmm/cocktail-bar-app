@@ -1,11 +1,9 @@
 import Modal from "../Modal"
-import style from './ingridientsModal.module.css'
 
 const IngridientsModal =() =>{
-    return <div className={style.ingridientWrapper}>
-        <Modal/>
-        <div>
-            <p>hello</p>
+    return <div>
+        <div >
+            <Modal/>
         </div>
     </div>
 }

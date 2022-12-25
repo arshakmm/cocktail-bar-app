@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import getIngridientsModal from '../../action/getIngridientModal'
 import style from './header.module.css' 
 import IngridientsModal from './Modal/IngridientsModal/IngridientsModal'
+import Modal from './Modal/Modal'
 
 export const Header =()=> {
     const ingridientsModal = useSelector((state) =>state.isModal)
@@ -10,12 +11,6 @@ export const Header =()=> {
     const showModal = () => {
         dispatch(getIngridientsModal(true))
     }
-    const hideModal = ()  => {
-        dispatch(getIngridientsModal(false))
-    }
-
-
-
     return <div className= {style.header}>
         <div className={style.container}>
            <div className={style.wrapperLogo}>
@@ -23,12 +18,8 @@ export const Header =()=> {
            </div> 
            <div className={style.wrapperMenu}>
             <button className={style.ingridientsModal} onClick={showModal}>Ingridient</button> 
-            <button onClick={hideModal  }>xxx</button>
+            {ingridientsModal && <IngridientsModal/> }
            </div>
-           {ingridientsModal && <IngridientsModal/> }
-           
         </div>
-        
     </div>
-    
 }
