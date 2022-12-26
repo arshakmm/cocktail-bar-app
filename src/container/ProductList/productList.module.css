@@ -32,4 +32,8 @@
     border-radius: 12px;
     font-size: 21px;
     color: darksalmon;
+    cursor: pointer;
+}
+.buttonWraper:hover{
+    color:white;
 }

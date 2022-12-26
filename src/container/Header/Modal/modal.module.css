@@ -5,17 +5,24 @@
     right: 0;
     bottom: 0;
     left: 0;
-    margin:15px;
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     align-items: baseline;
+    background-color: rgba(0, 0, 0, .5);
+    
+    
+    
   }
   
   .modal {
     background-color: #ffffff;
     border: 1px solid #bebebe;
-    border-radius: 2px;
+    border-radius: 25px;
     padding: 12px 16px;
+    max-width: 350px;
+    margin: 80px;
+
+  
   }
 
   .buttonWrapper{

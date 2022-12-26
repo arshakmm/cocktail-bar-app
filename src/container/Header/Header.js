@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
 import getIngridientsModal from '../../action/getIngridientModal'
 import style from './header.module.css' 
-import IngridientsModal from './Modal/IngridientsModal/IngridientsModal'
 import Modal from './Modal/Modal'
 
 export const Header =()=> {
@@ -10,6 +9,7 @@ export const Header =()=> {
     const dispatch = useDispatch()
     const showModal = () => {
         dispatch(getIngridientsModal(true))
+        
     }
     return <div className= {style.header}>
         <div className={style.container}>
@@ -18,7 +18,7 @@ export const Header =()=> {
            </div> 
            <div className={style.wrapperMenu}>
             <button className={style.ingridientsModal} onClick={showModal}>Ingridient</button> 
-            {ingridientsModal && <IngridientsModal/> }
+            {ingridientsModal && <Modal/> }
            </div>
         </div>
     </div>

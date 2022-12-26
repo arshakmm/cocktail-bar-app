@@ -36,7 +36,7 @@ const ProductList= () => {
           </div>
       </div>
       )}
-       <button className={style.buttonWraper} onClick={showProducts} >Show drinks</button>
+       <button className={style.buttonWraper} onClick={showProducts} >Get drinks</button>
     </div>
   );
 }
