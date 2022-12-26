@@ -21,4 +21,8 @@ img{
     background: none;
     color: bisque;
     font-size: 18px;
+    
+}
+.ingridientsModal:hover{
+   color: rgb(241, 137, 95);
 }
