@@ -6,25 +6,24 @@ import style from './productList.module.css'
 const ProductList= () => {
     const products = useSelector((state) => state.products);
     const loading = useSelector((state) => state.loading);
-
     const dispatch = useDispatch();
     const showProducts =()=>{
-        dispatch(getProducts());
+     dispatch(getProducts())
     }
   
     useEffect(() => {
-      dispatch(getProducts());
+      dispatch(getProducts())
     }, []);
     
     console.log(products)
     return (<div className={style.cocktailProducts}> 
         {loading ?(
-        <div>...Loading</div>
+        <div><img className={style.shakerLoader} src="https://img.freepik.com/free-icon/cocktail_318-402291.jpg?w=2000"/></div>
       ) : (
        <div key={products.idDrink}>
           <div>
             <div className={style.containerProducts}>
-              <div>
+              <div className={style.uu}>
                 <img className={style.cocktailsImg} src={products.strDrinkThumb} alt={products.strDrink} />
               </div>
               <div className={style.informetionDitils}>

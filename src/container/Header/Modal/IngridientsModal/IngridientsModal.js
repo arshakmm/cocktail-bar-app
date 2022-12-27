@@ -1,22 +1,28 @@
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
-import getProducts from "../../../../action/getActions"
+import { useEffect, useState } from "react"
+import {  useSelector } from "react-redux"
 
 const IngridientsModal =() =>{
     const ingridients = useSelector((state) => state.products)
+    const [currentIngridients, setCurrentIngredients] = useState([])
 
-    const ingrid = Object.keys(ingridients)
-
-    // const ii= ingrid.forEach(elem => elem.includes('strIngredient'))
-    let ss = ingrid.includes('strIngredient')
-
-    console.log(ss)
+    useEffect (() =>{
+        if(ingridients){
+            let local =[]
+            let ingr = Object.keys(ingridients)
+              ingr.forEach((element) => {
+                if(element.includes('strIngredient')) {
+                    if(ingridients[element]){
+                        local.push(ingridients[element])
+                    }
+                }
+              } )
+              setCurrentIngredients(local)
+        }
+    },[ingridients])
 
     return <div>
        <div >
-        <div >ingridient </div>
-
-
+          <ol>{currentIngridients.map(ingridentList => <li>{ingridentList}</li>)}</ol>
        </div>
     </div>
 }

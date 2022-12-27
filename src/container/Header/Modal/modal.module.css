@@ -8,21 +8,17 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    background-color: rgba(0, 0, 0, .5);
-    
-    
-    
+    background-color: rgba(0, 0, 0, .5); 
   }
   
   .modal {
-    background-color: #ffffff;
+    background-color: #f7dcdc;
     border: 1px solid #bebebe;
     border-radius: 25px;
     padding: 12px 16px;
     max-width: 350px;
     margin: 80px;
-
-  
+    gap:10px;
   }
 
   .buttonWrapper{
@@ -32,8 +28,16 @@
 
   .closeButton{
     border: none;
-    background-color: lavender;
+    background-color:#e6a7a7;
     border-radius: 50%;
     padding: 7px;
     cursor: pointer;
+  }
+
+  .ingridientsWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;;
+    margin-top: 10px;
+    color: rgb(146, 1, 1);
   }

@@ -3,11 +3,30 @@
     background-color: #aa98bb;
     color: rgb(128, 73, 82);
 }
+.shakerLoader{
+    font-size: 400px;
+    padding: 150px;
+    width: 250px;
+    height: 300px;
+    animation:shake 1s infinite;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+@keyframes shake{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+
 .containerProducts{
     display: flex;
-    gap: 50px;
-    
-    
+    gap: 50px;  
 }
 .informetionDitils{
     margin-top: 100px;
@@ -15,7 +34,6 @@
     flex-direction: column;
     gap: 10px;
     font-size: 17px;
-
 }
 .cocktailsImg{
     height: 450px;
@@ -37,3 +55,51 @@
 .buttonWraper:hover{
     color:white;
 }
+
+@media only screen and (max-width: 800px) {
+    .buttonWraper{
+        margin-left: 0;
+        margin-top: 15px;   
+        width: 170px;
+        height: 37px;
+    }
+    .cocktailsImg{
+        height: 380px;
+        width: 300px;
+    }
+    .containerProducts{
+        display: flex;
+        flex-direction: column;
+    }
+    .informetionDitils{
+        margin-top: 20px;
+    }
+    .containerProducts{
+        display: flex;
+        gap: 20px;   
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .buttonWraper{
+        margin-left: 0;
+        margin-top: 15px; 
+        width: 140px;
+        height: 32px;
+    }
+    .cocktailsImg{
+        height: 280px;
+        width: 200px;
+    }
+    .containerProducts{
+        display: flex;
+        flex-direction: column;
+    }
+    .informetionDitils{
+        margin-top: 1px;
+    }
+    .containerProducts{
+        display: flex;
+        gap: 20px; 
+    }
+  }

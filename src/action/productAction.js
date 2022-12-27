@@ -1,6 +1,5 @@
 import { actionType } from "../actionType/action-type";
 
-
 export const setProducts = (products) => {
     return {
       type: actionType.SHOW_COCKTAIL_BAR,

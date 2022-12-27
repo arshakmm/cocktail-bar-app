@@ -43,14 +43,11 @@ const Modal = () => {
                 <div className={style.buttonWrapper}>
                      <button className={style.closeButton} onClick={hideModal}>X</button>
                 </div>
-               
-                <div>
-                  This is my new modal!  
-                    <IngridientsModal/>
+                <div className={style.ingridientsWrapper}>
+                    <div>Ingredients for pripearing!  </div>
+                    <IngridientsModal/> 
                 </div>
-              
-                </div>
-              
+              </div>
         </div>
 }
 export default Modal

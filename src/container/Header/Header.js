@@ -8,8 +8,7 @@ export const Header =()=> {
     console.log("ingridientsModal",ingridientsModal);
     const dispatch = useDispatch()
     const showModal = () => {
-        dispatch(getIngridientsModal(true))
-        
+        dispatch(getIngridientsModal(true)) 
     }
     return <div className= {style.header}>
         <div className={style.container}>

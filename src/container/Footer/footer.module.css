@@ -5,9 +5,15 @@
     background-color:rgb(114 100 171);
     color: darkorange;
 }
-
-
 .footerContacts{
     font-size: 25px;
+}
 
+@media only screen and (max-width: 480px) {
+    .footerContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        
+    }
 }
