@@ -19,6 +19,7 @@ img{
     background: none;
     color: bisque;
     font-size: 18px;
+    cursor: pointer;
     
 }
 .ingridientsModal:hover{
